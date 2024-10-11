@@ -132,6 +132,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/myat/autonomous-car/catkin_ws/build/gtest/cmake_install.cmake")
   include("/home/myat/autonomous-car/catkin_ws/build/camera_view/cmake_install.cmake")
+  include("/home/myat/autonomous-car/catkin_ws/build/rplidar_ros/cmake_install.cmake")
+  include("/home/myat/autonomous-car/catkin_ws/build/my_slam_package/cmake_install.cmake")
 
 endif()
 
