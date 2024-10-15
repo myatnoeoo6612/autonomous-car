@@ -1,0 +1,13 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/myat/autonomous-car/catkin_ws/devel/lib/python3/dist-packages",
+        "/home/myat/myat/catkin_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/myat/autonomous-car/catkin_ws/devel/lib/python3/dist-packages",
+        "/home/myat/myat/catkin_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "cmake.sourceDirectory": "/home/myat/autonomous-car/catkin_ws/src/ackermann_drive_teleop"
+}
