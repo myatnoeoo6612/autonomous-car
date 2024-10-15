@@ -1,0 +1,39 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/myat/autonomous-car/catkin_ws/devel/include/**",
+        "/home/myat/myat/catkin_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/myat/myat/catkin_ws/src/ackermann_steering_robot/include/**",
+        "/home/myat/mind/catkin_ws/src/mastering_ros_demo_pkg/include/**",
+        "/home/myat/myat/catkin_ws/src/mav_comm/mav_msgs/include/**",
+        "/home/myat/myat/catkin_ws/src/mav_comm/mav_planning_msgs/include/**",
+        "/home/myat/mno/catkin_ws/src/my_robot_description/include/**",
+        "/home/myat/autonomous-car/catkin_ws/src/my_slam_package/include/**",
+        "/home/myat/autonomous-car/catkin_ws/src/ackerman_ros_robot_gazebo_simulation/custom_controllers/obstacle_detector/include/**",
+        "/home/myat/myat/catkin_ws/src/Mastering-ROS-for-Robotics-Programming-Third-edition/Chapter12/plugin_calculator/include/**",
+        "/home/myat/myat/catkin_ws/src/rosserial/rosserial_server/include/**",
+        "/home/myat/myat/catkin_ws/src/rosserial/rosserial_test/include/**",
+        "/home/myat/myat/catkin_ws/src/rotors_simulator/rotors_control/include/**",
+        "/home/myat/myat/catkin_ws/src/rotors_simulator/rotors_gazebo_plugins/include/**",
+        "/home/myat/myat/catkin_ws/src/rotors_simulator/rotors_hil_interface/include/**",
+        "/home/myat/myat/catkin_ws/src/rotors_simulator/rotors_joy_interface/include/**",
+        "/home/myat/feedback/catkin_ws/src/slam_bot/include/**",
+        "/home/myat/myat/catkin_ws/src/turtle_myat/include/**",
+        "/home/myat/myat/catkin_ws/src/turtle_pkg/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

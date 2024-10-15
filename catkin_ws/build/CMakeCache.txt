@@ -14,11 +14,27 @@
 # EXTERNAL cache entries
 ########################
 
+//Path to a file.
+ARMADILLO_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+ARMADILLO_LIBRARY:FILEPATH=/usr/lib/libarmadillo.so
+
 //Builds the googlemock subproject
 BUILD_GMOCK:BOOL=ON
 
 //Build dynamically-linked binaries
 BUILD_SHARED_LIBS:BOOL=ON
+
+//The directory containing a CMake configuration file for Boost.
+Boost_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0
+
+//Path to a file.
+Boost_INCLUDE_DIR:PATH=/usr/include
+
+Boost_SYSTEM_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+
+Boost_THREAD_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
 
 //List of ';' separated packages to exclude
 CATKIN_BLACKLIST_PACKAGES:STRING=
@@ -355,6 +371,15 @@ NOSETESTS:FILEPATH=/usr/bin/nosetests3
 //Path to a program.
 PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python3
 
+//Path to a file.
+PYTHON_INCLUDE_DIR:PATH=/usr/include/python3.8
+
+//Path to a library.
+PYTHON_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpython3.8.so
+
+//Path to a library.
+PYTHON_LIBRARY_DEBUG:FILEPATH=PYTHON_LIBRARY_DEBUG-NOTFOUND
+
 //Specify specific Python version to use ('major.minor' or 'major')
 PYTHON_VERSION:STRING=3
 
@@ -366,6 +391,18 @@ Project_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build
 
 //Value Computed by CMake
 Project_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src
+
+//The directory containing a CMake configuration file for Qt5Core.
+Qt5Core_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5Core
+
+//The directory containing a CMake configuration file for Qt5Gui.
+Qt5Gui_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui
+
+//The directory containing a CMake configuration file for Qt5Widgets.
+Qt5Widgets_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets
+
+//The directory containing a CMake configuration file for Qt5.
+Qt5_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5
 
 //Path to a library.
 RT_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/librt.so
@@ -383,6 +420,9 @@ UBUNTU:BOOL=TRUE
 UBUNTU_FOCAL:BOOL=TRUE
 
 //Path to a file.
+_file_name:FILEPATH=/home/myat/autonomous-car/catkin_ws/src/rosserial/rosserial_test/test/rosserial_python_socket.test
+
+//Path to a file.
 _gmock_INCLUDES:FILEPATH=/usr/src/googletest/googlemock/include/gmock/gmock.h
 
 //Path to a file.
@@ -395,6 +435,39 @@ _gtest_INCLUDES:FILEPATH=/usr/include/gtest/gtest.h
 _gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
 
 //Value Computed by CMake
+ackermann_drive_teleop_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/ackermann_drive_teleop
+
+//Value Computed by CMake
+ackermann_drive_teleop_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/ackermann_drive_teleop
+
+//The directory containing a CMake configuration file for ackermann_msgs.
+ackermann_msgs_DIR:PATH=/opt/ros/noetic/share/ackermann_msgs/cmake
+
+//The directory containing a CMake configuration file for actionlib.
+actionlib_DIR:PATH=/opt/ros/noetic/share/actionlib/cmake
+
+//The directory containing a CMake configuration file for actionlib_msgs.
+actionlib_msgs_DIR:PATH=/opt/ros/noetic/share/actionlib_msgs/cmake
+
+//The directory containing a CMake configuration file for bond.
+bond_DIR:PATH=/opt/ros/noetic/share/bond/cmake
+
+//The directory containing a CMake configuration file for bondcpp.
+bondcpp_DIR:PATH=/opt/ros/noetic/share/bondcpp/cmake
+
+//The directory containing a CMake configuration file for boost_atomic.
+boost_atomic_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_atomic-1.71.0
+
+//The directory containing a CMake configuration file for boost_headers.
+boost_headers_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.71.0
+
+//The directory containing a CMake configuration file for boost_system.
+boost_system_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_system-1.71.0
+
+//The directory containing a CMake configuration file for boost_thread.
+boost_thread_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_thread-1.71.0
+
+//Value Computed by CMake
 camera_view_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/camera_view
 
 //Value Computed by CMake
@@ -403,8 +476,44 @@ camera_view_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/camera_vie
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/noetic/share/catkin/cmake
 
+//The directory containing a CMake configuration file for class_loader.
+class_loader_DIR:PATH=/opt/ros/noetic/share/class_loader/cmake
+
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/noetic/share/cpp_common/cmake
+
+//The directory containing a CMake configuration file for diagnostic_msgs.
+diagnostic_msgs_DIR:PATH=/opt/ros/noetic/share/diagnostic_msgs/cmake
+
+//The directory containing a CMake configuration file for diagnostic_updater.
+diagnostic_updater_DIR:PATH=/opt/ros/noetic/share/diagnostic_updater/cmake
+
+//The directory containing a CMake configuration file for dynamic_reconfigure.
+dynamic_reconfigure_DIR:PATH=/opt/ros/noetic/share/dynamic_reconfigure/cmake
+
+//The directory containing a CMake configuration file for gazebo_msgs.
+gazebo_msgs_DIR:PATH=/opt/ros/noetic/share/gazebo_msgs/cmake
+
+//The directory containing a CMake configuration file for gazebo_ros.
+gazebo_ros_DIR:PATH=/opt/ros/noetic/share/gazebo_ros/cmake
+
+//The directory containing a CMake configuration file for gencpp.
+gencpp_DIR:PATH=/opt/ros/noetic/share/gencpp/cmake
+
+//The directory containing a CMake configuration file for geneus.
+geneus_DIR:PATH=/opt/ros/noetic/share/geneus/cmake
+
+//The directory containing a CMake configuration file for genlisp.
+genlisp_DIR:PATH=/opt/ros/noetic/share/genlisp/cmake
+
+//The directory containing a CMake configuration file for genmsg.
+genmsg_DIR:PATH=/opt/ros/noetic/share/genmsg/cmake
+
+//The directory containing a CMake configuration file for gennodejs.
+gennodejs_DIR:PATH=/opt/ros/noetic/share/gennodejs/cmake
+
+//The directory containing a CMake configuration file for genpy.
+genpy_DIR:PATH=/opt/ros/noetic/share/genpy/cmake
 
 //The directory containing a CMake configuration file for geometry_msgs.
 geometry_msgs_DIR:PATH=/opt/ros/noetic/share/geometry_msgs/cmake
@@ -458,8 +567,29 @@ gtest_hide_internal_symbols:BOOL=OFF
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 
+//The directory containing a CMake configuration file for image_transport.
+image_transport_DIR:PATH=/opt/ros/noetic/share/image_transport/cmake
+
+//The directory containing a CMake configuration file for interactive_markers.
+interactive_markers_DIR:PATH=/opt/ros/noetic/share/interactive_markers/cmake
+
+//The directory containing a CMake configuration file for kdl_parser.
+kdl_parser_DIR:PATH=/opt/ros/noetic/share/kdl_parser/cmake
+
+//The directory containing a CMake configuration file for laser_geometry.
+laser_geometry_DIR:PATH=/opt/ros/noetic/share/laser_geometry/cmake
+
 //Path to a library.
-lib:FILEPATH=/opt/ros/noetic/lib/libxmlrpcpp.so
+lib:FILEPATH=/opt/ros/noetic/lib/librostime.so
+
+//The directory containing a CMake configuration file for map_msgs.
+map_msgs_DIR:PATH=/opt/ros/noetic/share/map_msgs/cmake
+
+//The directory containing a CMake configuration file for message_filters.
+message_filters_DIR:PATH=/opt/ros/noetic/share/message_filters/cmake
+
+//The directory containing a CMake configuration file for message_generation.
+message_generation_DIR:PATH=/opt/ros/noetic/share/message_generation/cmake
 
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/noetic/share/message_runtime/cmake
@@ -470,8 +600,134 @@ my_slam_package_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/my_s
 //Value Computed by CMake
 my_slam_package_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/my_slam_package
 
+//The directory containing a CMake configuration file for nav_msgs.
+nav_msgs_DIR:PATH=/opt/ros/noetic/share/nav_msgs/cmake
+
+//The directory containing a CMake configuration file for nodelet.
+nodelet_DIR:PATH=/opt/ros/noetic/share/nodelet/cmake
+
+//Value Computed by CMake
+obstacle_detector_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/ackerman_ros_robot_gazebo_simulation/custom_controllers/obstacle_detector
+
+//Value Computed by CMake
+obstacle_detector_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/ackerman_ros_robot_gazebo_simulation/custom_controllers/obstacle_detector
+
+//Dependencies for the target
+obstacle_detector_gui_LIB_DEPENDS:STATIC=general;Qt5::Widgets;general;/opt/ros/noetic/lib/libnodeletlib.so;general;/opt/ros/noetic/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/noetic/lib/librviz.so;general;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;general;/usr/lib/x86_64-linux-gnu/libOgreMain.so;general;/usr/lib/x86_64-linux-gnu/libOpenGL.so;general;/usr/lib/x86_64-linux-gnu/libGLX.so;general;/usr/lib/x86_64-linux-gnu/libGLU.so;general;/opt/ros/noetic/lib/libimage_transport.so;general;/opt/ros/noetic/lib/libinteractive_markers.so;general;/opt/ros/noetic/lib/libresource_retriever.so;general;/opt/ros/noetic/lib/liburdf.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_model.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_world.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/noetic/lib/libclass_loader.so;general;/usr/lib/x86_64-linux-gnu/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/noetic/lib/libroslib.so;general;/opt/ros/noetic/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython3.8.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libtinyxml2.so;general;/opt/ros/noetic/lib/librosconsole_bridge.so;general;/opt/ros/noetic/lib/liblaser_geometry.so;general;/opt/ros/noetic/lib/libtf.so;general;/opt/ros/noetic/lib/libtf2_ros.so;general;/opt/ros/noetic/lib/libactionlib.so;general;/opt/ros/noetic/lib/libmessage_filters.so;general;/opt/ros/noetic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0;general;/opt/ros/noetic/lib/libxmlrpcpp.so;general;/opt/ros/noetic/lib/librosconsole.so;general;/opt/ros/noetic/lib/librosconsole_log4cxx.so;general;/opt/ros/noetic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0;general;/opt/ros/noetic/lib/libtf2.so;general;/opt/ros/noetic/lib/libroscpp_serialization.so;general;/opt/ros/noetic/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0;general;/opt/ros/noetic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;
+
+//Dependencies for the target
+obstacle_detector_nodelets_LIB_DEPENDS:STATIC=general;scans_merger;general;obstacle_extractor;general;obstacle_tracker;general;obstacle_publisher;
+
+//Dependencies for the target
+obstacle_extractor_LIB_DEPENDS:STATIC=general;/opt/ros/noetic/lib/libnodeletlib.so;general;/opt/ros/noetic/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/noetic/lib/librviz.so;general;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;general;/usr/lib/x86_64-linux-gnu/libOgreMain.so;general;/usr/lib/x86_64-linux-gnu/libOpenGL.so;general;/usr/lib/x86_64-linux-gnu/libGLX.so;general;/usr/lib/x86_64-linux-gnu/libGLU.so;general;/opt/ros/noetic/lib/libimage_transport.so;general;/opt/ros/noetic/lib/libinteractive_markers.so;general;/opt/ros/noetic/lib/libresource_retriever.so;general;/opt/ros/noetic/lib/liburdf.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_model.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_world.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/noetic/lib/libclass_loader.so;general;/usr/lib/x86_64-linux-gnu/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/noetic/lib/libroslib.so;general;/opt/ros/noetic/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython3.8.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libtinyxml2.so;general;/opt/ros/noetic/lib/librosconsole_bridge.so;general;/opt/ros/noetic/lib/liblaser_geometry.so;general;/opt/ros/noetic/lib/libtf.so;general;/opt/ros/noetic/lib/libtf2_ros.so;general;/opt/ros/noetic/lib/libactionlib.so;general;/opt/ros/noetic/lib/libmessage_filters.so;general;/opt/ros/noetic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0;general;/opt/ros/noetic/lib/libxmlrpcpp.so;general;/opt/ros/noetic/lib/librosconsole.so;general;/opt/ros/noetic/lib/librosconsole_log4cxx.so;general;/opt/ros/noetic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0;general;/opt/ros/noetic/lib/libtf2.so;general;/opt/ros/noetic/lib/libroscpp_serialization.so;general;/opt/ros/noetic/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0;general;/opt/ros/noetic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;general;/usr/lib/libarmadillo.so;
+
+//Dependencies for the target
+obstacle_publisher_LIB_DEPENDS:STATIC=general;/opt/ros/noetic/lib/libnodeletlib.so;general;/opt/ros/noetic/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/noetic/lib/librviz.so;general;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;general;/usr/lib/x86_64-linux-gnu/libOgreMain.so;general;/usr/lib/x86_64-linux-gnu/libOpenGL.so;general;/usr/lib/x86_64-linux-gnu/libGLX.so;general;/usr/lib/x86_64-linux-gnu/libGLU.so;general;/opt/ros/noetic/lib/libimage_transport.so;general;/opt/ros/noetic/lib/libinteractive_markers.so;general;/opt/ros/noetic/lib/libresource_retriever.so;general;/opt/ros/noetic/lib/liburdf.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_model.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_world.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/noetic/lib/libclass_loader.so;general;/usr/lib/x86_64-linux-gnu/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/noetic/lib/libroslib.so;general;/opt/ros/noetic/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython3.8.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libtinyxml2.so;general;/opt/ros/noetic/lib/librosconsole_bridge.so;general;/opt/ros/noetic/lib/liblaser_geometry.so;general;/opt/ros/noetic/lib/libtf.so;general;/opt/ros/noetic/lib/libtf2_ros.so;general;/opt/ros/noetic/lib/libactionlib.so;general;/opt/ros/noetic/lib/libmessage_filters.so;general;/opt/ros/noetic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0;general;/opt/ros/noetic/lib/libxmlrpcpp.so;general;/opt/ros/noetic/lib/librosconsole.so;general;/opt/ros/noetic/lib/librosconsole_log4cxx.so;general;/opt/ros/noetic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0;general;/opt/ros/noetic/lib/libtf2.so;general;/opt/ros/noetic/lib/libroscpp_serialization.so;general;/opt/ros/noetic/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0;general;/opt/ros/noetic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;
+
+//Dependencies for the target
+obstacle_tracker_LIB_DEPENDS:STATIC=general;/opt/ros/noetic/lib/libnodeletlib.so;general;/opt/ros/noetic/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/noetic/lib/librviz.so;general;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;general;/usr/lib/x86_64-linux-gnu/libOgreMain.so;general;/usr/lib/x86_64-linux-gnu/libOpenGL.so;general;/usr/lib/x86_64-linux-gnu/libGLX.so;general;/usr/lib/x86_64-linux-gnu/libGLU.so;general;/opt/ros/noetic/lib/libimage_transport.so;general;/opt/ros/noetic/lib/libinteractive_markers.so;general;/opt/ros/noetic/lib/libresource_retriever.so;general;/opt/ros/noetic/lib/liburdf.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_model.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_world.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/noetic/lib/libclass_loader.so;general;/usr/lib/x86_64-linux-gnu/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/noetic/lib/libroslib.so;general;/opt/ros/noetic/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython3.8.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libtinyxml2.so;general;/opt/ros/noetic/lib/librosconsole_bridge.so;general;/opt/ros/noetic/lib/liblaser_geometry.so;general;/opt/ros/noetic/lib/libtf.so;general;/opt/ros/noetic/lib/libtf2_ros.so;general;/opt/ros/noetic/lib/libactionlib.so;general;/opt/ros/noetic/lib/libmessage_filters.so;general;/opt/ros/noetic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0;general;/opt/ros/noetic/lib/libxmlrpcpp.so;general;/opt/ros/noetic/lib/librosconsole.so;general;/opt/ros/noetic/lib/librosconsole_log4cxx.so;general;/opt/ros/noetic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0;general;/opt/ros/noetic/lib/libtf2.so;general;/opt/ros/noetic/lib/libroscpp_serialization.so;general;/opt/ros/noetic/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0;general;/opt/ros/noetic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;general;/usr/lib/libarmadillo.so;
+
+//The directory containing a CMake configuration file for pluginlib.
+pluginlib_DIR:PATH=/opt/ros/noetic/share/pluginlib/cmake
+
+//Value Computed by CMake
+rbcar_common_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/ackerman_ros_robot_gazebo_simulation/rbcar_common/rbcar_common
+
+//Value Computed by CMake
+rbcar_common_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/ackerman_ros_robot_gazebo_simulation/rbcar_common/rbcar_common
+
+//Value Computed by CMake
+rbcar_control_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/ackerman_ros_robot_gazebo_simulation/rbcar_sim/rbcar_control
+
+//The directory containing a CMake configuration file for rbcar_control.
+rbcar_control_DIR:PATH=/home/myat/autonomous-car/catkin_ws/devel/share/rbcar_control/cmake
+
+//Value Computed by CMake
+rbcar_control_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/ackerman_ros_robot_gazebo_simulation/rbcar_sim/rbcar_control
+
+//Value Computed by CMake
+rbcar_description_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/ackerman_ros_robot_gazebo_simulation/rbcar_common/rbcar_description
+
+//The directory containing a CMake configuration file for rbcar_description.
+rbcar_description_DIR:PATH=/home/myat/autonomous-car/catkin_ws/devel/share/rbcar_description/cmake
+
+//Value Computed by CMake
+rbcar_description_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/ackerman_ros_robot_gazebo_simulation/rbcar_common/rbcar_description
+
+//Value Computed by CMake
+rbcar_gazebo_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/ackerman_ros_robot_gazebo_simulation/rbcar_sim/rbcar_gazebo
+
+//Value Computed by CMake
+rbcar_gazebo_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/ackerman_ros_robot_gazebo_simulation/rbcar_sim/rbcar_gazebo
+
+//Value Computed by CMake
+rbcar_joystick_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/ackerman_ros_robot_gazebo_simulation/rbcar_sim/rbcar_joystick
+
+//Value Computed by CMake
+rbcar_joystick_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/ackerman_ros_robot_gazebo_simulation/rbcar_sim/rbcar_joystick
+
+//Value Computed by CMake
+rbcar_localization_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/ackerman_ros_robot_gazebo_simulation/rbcar_common/rbcar_localization
+
+//Value Computed by CMake
+rbcar_localization_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/ackerman_ros_robot_gazebo_simulation/rbcar_common/rbcar_localization
+
+//Value Computed by CMake
+rbcar_navigation_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/ackerman_ros_robot_gazebo_simulation/rbcar_common/rbcar_navigation
+
+//Value Computed by CMake
+rbcar_navigation_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/ackerman_ros_robot_gazebo_simulation/rbcar_common/rbcar_navigation
+
+//Value Computed by CMake
+rbcar_pad_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/ackerman_ros_robot_gazebo_simulation/rbcar_common/rbcar_pad
+
+//Value Computed by CMake
+rbcar_pad_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/ackerman_ros_robot_gazebo_simulation/rbcar_common/rbcar_pad
+
+//Value Computed by CMake
+rbcar_robot_control_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/ackerman_ros_robot_gazebo_simulation/rbcar_sim/rbcar_robot_control
+
+//Value Computed by CMake
+rbcar_robot_control_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/ackerman_ros_robot_gazebo_simulation/rbcar_sim/rbcar_robot_control
+
+//Value Computed by CMake
+rbcar_sim_bringup_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/ackerman_ros_robot_gazebo_simulation/rbcar_sim/rbcar_sim_bringup
+
+//Value Computed by CMake
+rbcar_sim_bringup_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/ackerman_ros_robot_gazebo_simulation/rbcar_sim/rbcar_sim_bringup
+
+//Value Computed by CMake
+rbcar_viz_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/ackerman_ros_robot_gazebo_simulation/rbcar_viz
+
+//Value Computed by CMake
+rbcar_viz_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/ackerman_ros_robot_gazebo_simulation/rbcar_viz
+
+//The directory containing a CMake configuration file for resource_retriever.
+resource_retriever_DIR:PATH=/opt/ros/noetic/share/resource_retriever/cmake
+
+//The directory containing a CMake configuration file for robot_state_publisher.
+robot_state_publisher_DIR:PATH=/opt/ros/noetic/share/robot_state_publisher/cmake
+
+//Value Computed by CMake
+robotnik_msgs_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/ackerman_ros_robot_gazebo_simulation/rbcar_common/robotnik_msgs
+
+//The directory containing a CMake configuration file for robotnik_msgs.
+robotnik_msgs_DIR:PATH=/home/myat/autonomous-car/catkin_ws/devel/share/robotnik_msgs/cmake
+
+//Value Computed by CMake
+robotnik_msgs_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/ackerman_ros_robot_gazebo_simulation/rbcar_common/robotnik_msgs
+
+//Value Computed by CMake
+robotnik_sensors_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/ackerman_ros_robot_gazebo_simulation/rbcar_common/robotnik_sensors
+
+//Value Computed by CMake
+robotnik_sensors_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/ackerman_ros_robot_gazebo_simulation/rbcar_common/robotnik_sensors
+
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/noetic/share/rosconsole/cmake
+
+//The directory containing a CMake configuration file for rosconsole_bridge.
+rosconsole_bridge_DIR:PATH=/opt/ros/noetic/share/rosconsole_bridge/cmake
 
 //The directory containing a CMake configuration file for roscpp.
 roscpp_DIR:PATH=/opt/ros/noetic/share/roscpp/cmake
@@ -482,11 +738,131 @@ roscpp_serialization_DIR:PATH=/opt/ros/noetic/share/roscpp_serialization/cmake
 //The directory containing a CMake configuration file for roscpp_traits.
 roscpp_traits_DIR:PATH=/opt/ros/noetic/share/roscpp_traits/cmake
 
+//The directory containing a CMake configuration file for rosgraph.
+rosgraph_DIR:PATH=/opt/ros/noetic/share/rosgraph/cmake
+
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/noetic/share/rosgraph_msgs/cmake
 
+//The directory containing a CMake configuration file for roslaunch.
+roslaunch_DIR:PATH=/opt/ros/noetic/share/roslaunch/cmake
+
+//The directory containing a CMake configuration file for roslib.
+roslib_DIR:PATH=/opt/ros/noetic/share/roslib/cmake
+
+//The directory containing a CMake configuration file for rospack.
+rospack_DIR:PATH=/opt/ros/noetic/share/rospack/cmake
+
 //The directory containing a CMake configuration file for rospy.
 rospy_DIR:PATH=/opt/ros/noetic/share/rospy/cmake
+
+//Value Computed by CMake
+rosserial_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/rosserial/rosserial
+
+//Value Computed by CMake
+rosserial_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/rosserial/rosserial
+
+//Value Computed by CMake
+rosserial_arduino_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/rosserial/rosserial_arduino
+
+//Value Computed by CMake
+rosserial_arduino_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/rosserial/rosserial_arduino
+
+//Value Computed by CMake
+rosserial_chibios_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/rosserial/rosserial_chibios
+
+//Value Computed by CMake
+rosserial_chibios_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/rosserial/rosserial_chibios
+
+//Value Computed by CMake
+rosserial_client_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/rosserial/rosserial_client
+
+//The directory containing a CMake configuration file for rosserial_client.
+rosserial_client_DIR:PATH=/home/myat/autonomous-car/catkin_ws/devel/share/rosserial_client/cmake
+
+//Value Computed by CMake
+rosserial_client_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/rosserial/rosserial_client
+
+//Value Computed by CMake
+rosserial_embeddedlinux_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/rosserial/rosserial_embeddedlinux
+
+//Value Computed by CMake
+rosserial_embeddedlinux_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/rosserial/rosserial_embeddedlinux
+
+//Value Computed by CMake
+rosserial_mbed_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/rosserial/rosserial_mbed
+
+//Value Computed by CMake
+rosserial_mbed_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/rosserial/rosserial_mbed
+
+//Value Computed by CMake
+rosserial_msgs_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/rosserial/rosserial_msgs
+
+//The directory containing a CMake configuration file for rosserial_msgs.
+rosserial_msgs_DIR:PATH=/home/myat/autonomous-car/catkin_ws/devel/share/rosserial_msgs/cmake
+
+//Value Computed by CMake
+rosserial_msgs_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/rosserial/rosserial_msgs
+
+//Value Computed by CMake
+rosserial_python_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/rosserial/rosserial_python
+
+//The directory containing a CMake configuration file for rosserial_python.
+rosserial_python_DIR:PATH=/home/myat/autonomous-car/catkin_ws/devel/share/rosserial_python/cmake
+
+//Value Computed by CMake
+rosserial_python_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/rosserial/rosserial_python
+
+//Value Computed by CMake
+rosserial_server_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/rosserial/rosserial_server
+
+//The directory containing a CMake configuration file for rosserial_server.
+rosserial_server_DIR:PATH=/home/myat/autonomous-car/catkin_ws/devel/share/rosserial_server/cmake
+
+//Value Computed by CMake
+rosserial_server_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/rosserial/rosserial_server
+
+//Dependencies for the target
+rosserial_server_lookup_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libpython3.8.so;
+
+//Value Computed by CMake
+rosserial_test_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/rosserial/rosserial_test
+
+//Value Computed by CMake
+rosserial_test_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/rosserial/rosserial_test
+
+//Value Computed by CMake
+rosserial_tivac_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/rosserial/rosserial_tivac
+
+//Value Computed by CMake
+rosserial_tivac_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/rosserial/rosserial_tivac
+
+//Value Computed by CMake
+rosserial_vex_cortex_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/rosserial/rosserial_vex_cortex
+
+//Value Computed by CMake
+rosserial_vex_cortex_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/rosserial/rosserial_vex_cortex
+
+//Value Computed by CMake
+rosserial_vex_v5_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/rosserial/rosserial_vex_v5
+
+//Value Computed by CMake
+rosserial_vex_v5_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/rosserial/rosserial_vex_v5
+
+//Value Computed by CMake
+rosserial_windows_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/rosserial/rosserial_windows
+
+//Value Computed by CMake
+rosserial_windows_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/rosserial/rosserial_windows
+
+//Value Computed by CMake
+rosserial_xbee_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/rosserial/rosserial_xbee
+
+//Value Computed by CMake
+rosserial_xbee_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/rosserial/rosserial_xbee
+
+//The directory containing a CMake configuration file for rostest.
+rostest_DIR:PATH=/opt/ros/noetic/share/rostest/cmake
 
 //The directory containing a CMake configuration file for rostime.
 rostime_DIR:PATH=/opt/ros/noetic/share/rostime/cmake
@@ -497,11 +873,65 @@ rplidar_ros_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/rplidar_
 //Value Computed by CMake
 rplidar_ros_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/rplidar_ros
 
+//The directory containing a CMake configuration file for rviz.
+rviz_DIR:PATH=/opt/ros/noetic/share/rviz/cmake
+
+//Dependencies for the target
+scans_merger_LIB_DEPENDS:STATIC=general;/opt/ros/noetic/lib/libnodeletlib.so;general;/opt/ros/noetic/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/noetic/lib/librviz.so;general;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;general;/usr/lib/x86_64-linux-gnu/libOgreMain.so;general;/usr/lib/x86_64-linux-gnu/libOpenGL.so;general;/usr/lib/x86_64-linux-gnu/libGLX.so;general;/usr/lib/x86_64-linux-gnu/libGLU.so;general;/opt/ros/noetic/lib/libimage_transport.so;general;/opt/ros/noetic/lib/libinteractive_markers.so;general;/opt/ros/noetic/lib/libresource_retriever.so;general;/opt/ros/noetic/lib/liburdf.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_model.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_world.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/noetic/lib/libclass_loader.so;general;/usr/lib/x86_64-linux-gnu/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/noetic/lib/libroslib.so;general;/opt/ros/noetic/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython3.8.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libtinyxml2.so;general;/opt/ros/noetic/lib/librosconsole_bridge.so;general;/opt/ros/noetic/lib/liblaser_geometry.so;general;/opt/ros/noetic/lib/libtf.so;general;/opt/ros/noetic/lib/libtf2_ros.so;general;/opt/ros/noetic/lib/libactionlib.so;general;/opt/ros/noetic/lib/libmessage_filters.so;general;/opt/ros/noetic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0;general;/opt/ros/noetic/lib/libxmlrpcpp.so;general;/opt/ros/noetic/lib/librosconsole.so;general;/opt/ros/noetic/lib/librosconsole_log4cxx.so;general;/opt/ros/noetic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0;general;/opt/ros/noetic/lib/libtf2.so;general;/opt/ros/noetic/lib/libroscpp_serialization.so;general;/opt/ros/noetic/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0;general;/opt/ros/noetic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;
+
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/noetic/share/sensor_msgs/cmake
 
+//The directory containing a CMake configuration file for smclib.
+smclib_DIR:PATH=/opt/ros/noetic/share/smclib/cmake
+
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/noetic/share/std_msgs/cmake
+
+//The directory containing a CMake configuration file for std_srvs.
+std_srvs_DIR:PATH=/opt/ros/noetic/share/std_srvs/cmake
+
+//Value Computed by CMake
+teb_local_planner_tutorials_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/ackerman_ros_robot_gazebo_simulation/custom_controllers/teb_local_planner_tutorials
+
+//Value Computed by CMake
+teb_local_planner_tutorials_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/ackerman_ros_robot_gazebo_simulation/custom_controllers/teb_local_planner_tutorials
+
+//Value Computed by CMake
+test_serial_BINARY_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/build/test_serial
+
+//Value Computed by CMake
+test_serial_SOURCE_DIR:STATIC=/home/myat/autonomous-car/catkin_ws/src/test_serial
+
+//The directory containing a CMake configuration file for tf2.
+tf2_DIR:PATH=/opt/ros/noetic/share/tf2/cmake
+
+//The directory containing a CMake configuration file for tf2_kdl.
+tf2_kdl_DIR:PATH=/opt/ros/noetic/share/tf2_kdl/cmake
+
+//The directory containing a CMake configuration file for tf2_msgs.
+tf2_msgs_DIR:PATH=/opt/ros/noetic/share/tf2_msgs/cmake
+
+//The directory containing a CMake configuration file for tf2_py.
+tf2_py_DIR:PATH=/opt/ros/noetic/share/tf2_py/cmake
+
+//The directory containing a CMake configuration file for tf2_ros.
+tf2_ros_DIR:PATH=/opt/ros/noetic/share/tf2_ros/cmake
+
+//The directory containing a CMake configuration file for tf.
+tf_DIR:PATH=/opt/ros/noetic/share/tf/cmake
+
+//The directory containing a CMake configuration file for topic_tools.
+topic_tools_DIR:PATH=/opt/ros/noetic/share/topic_tools/cmake
+
+//The directory containing a CMake configuration file for trajectory_msgs.
+trajectory_msgs_DIR:PATH=/opt/ros/noetic/share/trajectory_msgs/cmake
+
+//The directory containing a CMake configuration file for urdf.
+urdf_DIR:PATH=/opt/ros/noetic/share/urdf/cmake
+
+//The directory containing a CMake configuration file for visualization_msgs.
+visualization_msgs_DIR:PATH=/opt/ros/noetic/share/visualization_msgs/cmake
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/noetic/share/xmlrpcpp/cmake
@@ -511,6 +941,12 @@ xmlrpcpp_DIR:PATH=/opt/ros/noetic/share/xmlrpcpp/cmake
 # INTERNAL cache entries
 ########################
 
+//ADVANCED property for variable: ARMADILLO_INCLUDE_DIR
+ARMADILLO_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ARMADILLO_LIBRARY
+ARMADILLO_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_DIR
+Boost_DIR-ADVANCED:INTERNAL=1
 //catkin environment
 CATKIN_ENV:INTERNAL=/home/myat/autonomous-car/catkin_ws/build/catkin_generated/env_cached.sh
 CATKIN_TEST_RESULTS_DIR:INTERNAL=/home/myat/autonomous-car/catkin_ws/build/test_results
@@ -654,7 +1090,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=24
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -697,10 +1133,16 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding Armadillo
+FIND_PACKAGE_MESSAGE_DETAILS_Armadillo:INTERNAL=[/usr/lib/libarmadillo.so][/usr/include][v9.800.4()]
+//Details about finding Boost
+FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake][cfound components: system thread ][v1.71.0()]
 //Details about finding PY_em
 FIND_PACKAGE_MESSAGE_DETAILS_PY_em:INTERNAL=[/usr/lib/python3/dist-packages/em.py][v()]
 //Details about finding PythonInterp
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python3][v3.8.10()]
+//Details about finding PythonLibs
+FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpython3.8.so][/usr/include/python3.8][v3.8.10()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 GMOCK_FROM_SOURCE_FOUND:INTERNAL=TRUE
@@ -733,12 +1175,26 @@ GTEST_MAIN_LIBRARY-ADVANCED:INTERNAL=1
 GTEST_MAIN_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PYTHON_EXECUTABLE
 PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PYTHON_INCLUDE_DIR
+PYTHON_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //This needs to be in PYTHONPATH when 'setup.py install' is called.
 //  And it needs to match.  But setuptools won't tell us where
 // it will install things.
 PYTHON_INSTALL_DIR:INTERNAL=lib/python3/dist-packages
+//ADVANCED property for variable: PYTHON_LIBRARY
+PYTHON_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PYTHON_LIBRARY_DEBUG
+PYTHON_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/home/myat/autonomous-car/catkin_ws/install
+//ADVANCED property for variable: boost_atomic_DIR
+boost_atomic_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_headers_DIR
+boost_headers_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_system_DIR
+boost_system_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_thread_DIR
+boost_thread_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: gmock_build_tests
 gmock_build_tests-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: gtest_build_samples

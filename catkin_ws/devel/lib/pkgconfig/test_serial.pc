@@ -1,0 +1,8 @@
+prefix=/home/myat/autonomous-car/catkin_ws/devel
+
+Name: test_serial
+Description: Description of test_serial
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
